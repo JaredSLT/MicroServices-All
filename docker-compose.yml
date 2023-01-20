@@ -1,0 +1,10 @@
+version: '3.1'
+services:
+  server:
+    image: jthorne94/compressor
+    container_name: compressor
+    network_mode: bridge
+
+    ports:
+      - "60842:80"
+    restart: unless-stopped
